@@ -2,18 +2,18 @@ version: '3.7'
 
 services:
   postgis:
-    container_name: salon_postgis
+    container_name: clarivate_postgis
     image: postgis/postgis:13-3.2
     environment:
       POSTGRES_USER: ${DB_USER:-admin}
-      POSTGRES_PASSWORD: ${DB_PASSWORD:-admin@salon}
-      POSTGRES_DB: ${DB_DATABASE:-salon_db}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-admin@clarivate}
+      POSTGRES_DB: ${DB_DATABASE:-clarivate_db}
     volumes:
       - ./data/postgis:/var/lib/postgresql/data
     ports:
       - '54320:5432'
     networks:
-      - salon-network
+      - clarivate-network
     restart: always
 
   zookeeper:
@@ -63,5 +63,5 @@ services:
       - kafka
 
 networks:
-  salon-network:
+  clarivate-network:
     driver: bridge
