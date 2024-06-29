@@ -17,43 +17,43 @@ Brief description of the project.
 
 1. Navigate to the `frontend/` directory:
    
-   cd frontend/
+   `cd frontend/`
 
 2. Install dependencies:
    
-   npm install
+   `npm install`
 
 3. Start the development server:
    
-   npm run start
+   `npm run start`
    
 ### Backend (Node.js, Nest.js)
 
 1. Navigate to the `backend/` directory:
    
-   cd backend/
+   `cd backend/`
    
 
 2. Install dependencies:
    
-   npm install
+   `npm install`
    
 
 3. Start the development server (assuming you have a start script in your `package.json`):
    
-   npm run start
+   `npm run start`
    
 
 ### Shared ORM Library (Node.js, Nest.js, PostgreSQL, ORM)
 
 1. Navigate to the `shared-orm-library/` directory:
    
-   cd shared-orm-library/
+   `cd shared-orm-library/`
    
 
 2. Install dependencies:
    
-   npm install
+   `npm install`
    
 
 3. Additional setup steps specific to your ORM library (Knex or Objection) and PostgreSQL configuration.
@@ -66,12 +66,12 @@ Brief description of the project.
 
 2. Navigate to the `shared-orm-library/` directory:
    
-   cd shared-orm-library/
+   `cd shared-orm-library/`
    
 
 3. Run migrations to update your database schema:
    
-   npx knex migrate:latest
+   `npx knex migrate:latest`
    
    This command will execute all pending migrations located in the `migrations/` folder.
 
@@ -79,7 +79,7 @@ Brief description of the project.
 
 To create a new migration file, use the following command:
    
-   npx knex migrate:make migration_name
+   `npx knex migrate:make migration_name`
    
    Replace `migration_name` with a descriptive name for your migration. This will generate a new migration file in the `migrations/` folder.
 
